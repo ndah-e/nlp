@@ -304,16 +304,4 @@ class sentimentPP():
             
         return normalized_corpus
     
-    
-if __name__ == "__main__":
-    text = ["It's been said of Dürer's rhino: probably no animal picture has exerted such a profound influence on the arts",
-            "When worker bees decide to make a new queen, they feed copious amounts of royal jelly to a few small larvae",
-            "triggering a cascade of molecular events resulting in development of a queen",
-            "The cause of Napoleon's death has been widely debated. Was it arsenic poisoning? Stomach cancer? A peptic ulcer?",
-            "1950 : Early computers cost about as much as a private jet - which would you rather own? ✈️or 🖥",
-            "ow that I’m 18 years old, it’s *perfectly* acceptable for me to attend the birthday shindigs of my older", 
-            "more distinguished...so, don’t mind me if I humblebrag about being live at #Web30"]
-            
-    print(text)
     norm = sentimentPP(text)
-    print(norm.normalize_corpus(spell_check=False, stemming = True))
